@@ -3,19 +3,19 @@ const mongoose = require("mongoose");
 const listOfJobSchema = new mongoose.Schema({
   jobname: {
     type: String,
-    required: true,
+    // required: true,
   },
   jobrequisitionid: {
     type: String,
-    required: true,
+    // required: true,
   },
   jobtitle: {
-    type: Number,
-    required: true,
+    type: String,
+    // required: true,
   },
   jobdescription: {
     type: String,
-    required: true,
+    // required: true,
   },
 });
 

@@ -38,11 +38,11 @@ function sampleListJobs(pId, tId, userFilter) {
         });
         joblist
           .save()
-          .then(() => {
-            console.log("mai save hogya");
+          .then((res) => {
+            console.log("Data Saved", res);
           })
           .catch((error) => {
-            console.log(" i m error", error);
+            console.log(error);
           });
         console.log(`Job name: ${resource.name}`);
         console.log(`Job requisition ID: ${resource.requisitionId}`);
